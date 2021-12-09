@@ -1,1 +1,1 @@
-web: gunicorn IsaiahsPlaylistBackend.wsgi --log-file -
+web: gunicorn IsaiahsPlaylistBackend.wsgi
