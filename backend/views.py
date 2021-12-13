@@ -1,5 +1,5 @@
 from rest_framework import viewsets
-from django.views.decorators.csrf import csrf_exempt
+# from django.views.decorators.csrf import csrf_exempt
 # from rest_framework.decorators import api_view 
 # from rest_framework import status
 # from rest_framework.response import Response
@@ -16,7 +16,6 @@ from .serializers import TrackSerializer
 #     serializer = TrackSerializer(queryset, many=True)
 #     return Response(serializer.data)
 
-@csrf_exempt
 class TrackViewSet(viewsets.ModelViewSet):
   queryset = Track.objects.all()
   serializer_class = TrackSerializer 
