@@ -28,7 +28,8 @@ DEBUG = False
 
 ALLOWED_HOSTS = [
     'localhost',
-    'django-tester111.herokuapp.com'
+    'django-tester111.herokuapp.com',
+    'http://localhost:3000/'
 ]
 
 
@@ -75,7 +76,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'IsaiahsPlaylistBackend.wsgi.application'
-
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
