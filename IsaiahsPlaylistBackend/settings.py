@@ -29,7 +29,8 @@ DEBUG = False
 ALLOWED_HOSTS = [
     'localhost',
     'django-tester111.herokuapp.com',
-    'http://localhost:3000/'
+    'https://isaiahs-react-tester.herokuapp.com/',
+    'isaiahs-react-tester.herokuapp.com'
 ]
 
 
