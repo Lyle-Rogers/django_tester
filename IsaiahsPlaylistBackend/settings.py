@@ -26,16 +26,14 @@ SECRET_KEY = 'django-insecure-vru5p=gx8+^*s5#+@6+^i!3pfkyseh*&76$@ud&k+twm1(pwz_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-# ALLOWED_HOSTS = [
-#     'localhost',
-#     'django-tester111.herokuapp.com',
-#     'https://isaiahs-react-tester.herokuapp.com/',
-#     'isaiahs-react-tester.herokuapp.com'
-# ]
-
 ALLOWED_HOSTS = [
-    '*'
+    'localhost',
+    'django-tester111.herokuapp.com',
+    'https://isaiahs-react-tester.herokuapp.com/',
+    'isaiahs-react-tester.herokuapp.com'
 ]
+
+CORS_ORIGIN_ALLOW_ALL = True
 
 # Application definition
 
@@ -45,12 +43,14 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'corsheaders',
     'django.contrib.staticfiles',
     'rest_framework',
     'backend'
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
